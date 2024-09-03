@@ -1,0 +1,21 @@
+<script>
+    /*Faça um código em Javascript que receba do usuário o valor do salário de um funcionário e o seu nome completo. Feito isso, calcule e apresente individualmente a divisão deste salário nas categorias abaixo:CASAN 1,5% do salário // Alimentação 30% do salário // Farmácia 9% do salário
+// Energia elétrica 8,5% do salário // Diversos 15% do salário 
+// Poupança 11% do salário // Prestações 19,5% do salário 
+// Vestuário 5,5% do salário 
+Apresente o nome do empregado e seu salário antes dos resultados dos cálculos das categorias */
+
+
+
+const salario = Number(prompt(`Qual o valor do seu salário?`));
+const nome = prompt(`Qual o seu nome completo?`);
+let casan = salario * 0.015;
+let alimentacao = salario * 0.30;
+let farmacia = salario * 0.09;
+let energiaEletrica = salario * 0.085;
+let diversos = salario * 0.15;
+let poupanca = salario * 0.11;
+let prestacoes = salario * 0.195;
+let vestuario = salario * 0.055;
+alert(`${nome} A divisão do salário é ${casan}, ${alimentacao}, ${farmacia}, ${energiaEletrica}, ${diversos}, ${poupanca}, ${prestacoes}, ${vestuario}`);
+</script>

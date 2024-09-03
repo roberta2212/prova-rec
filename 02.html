@@ -1,0 +1,15 @@
+<script>
+   /* Faça um código em Javascript que receba do usuário os seguintes dados:
+Área da parede em metros quadrados;
+Rendimento da tinta em metros quadrados por litro;
+Preço da lata de tinta com 4 litros.
+Calcule e apresente qual será o custo (em reais) para pintar essa parede.*/
+
+const area = Number(prompt(`Qual a área da parede em metros quadrados?`));
+const rendimentoLata = Number(prompt(`Qual o rendimento da tinta em metros quadrados por litro?`));
+const precoTinta = Number(prompt(`Qual o preço da lata de tinta com 4 litros?`));
+let calculoArea = Math.ceil (area / rendimentoLata);
+let valor = calculoArea * precoTinta;
+
+alert(`o valor é de ${valor} reais`);
+</script>
